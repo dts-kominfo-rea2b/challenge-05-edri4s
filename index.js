@@ -8,11 +8,9 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (data, callbackSort) => {
   const urutkanNama = callbackSort(data);
-  let dataNama = [];
-  let nomor = 1;
+  const dataNama = [];
   for (let i = 0; i < urutkanNama.length; i++) {
-    dataNama[i] = `${nomor}.${urutkanNama[i]}`;
-    nomor++;
+    dataNama[i] = `${i + 1}. ${urutkanNama[i]}`;
   }
   return dataNama;
 };
